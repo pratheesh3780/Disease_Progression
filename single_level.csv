@@ -1,0 +1,11 @@
+"irrigation_type","moisture","block","time","sev"
+"Drip","High moisture",1,0,0.011
+"Drip","High moisture",1,7,0.034
+"Drip","High moisture",1,14,0.114
+"Drip","High moisture",1,21,0.126
+"Drip","High moisture",1,28,0.16
+"Drip","High moisture",1,35,0.183
+"Drip","High moisture",1,42,0.297
+"Drip","High moisture",1,49,0.331
+"Drip","High moisture",1,56,0.389
+"Drip","High moisture",1,63,0.434
