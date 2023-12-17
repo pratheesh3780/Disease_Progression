@@ -5,7 +5,9 @@ date: "2023-12-17"
 output: html_document
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 # grapesDPA - README  
 grapesDPA operates as an open-source software, governed by the GNU Public License Version 3. We highly value your feedback and encourage users to contribute, share concerns, or propose enhancements. Your engagement is pivotal in refining and evolving grapesDPA for an enhanced disease progression analysis experience. Read below the given detailed instruction manual.  
 
