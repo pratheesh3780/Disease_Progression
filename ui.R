@@ -22,8 +22,18 @@ ui <- dashboardPage(
                menuItem("Limited potential", 
                         tabName = "lp_sle",icon = icon("pencil"))
       ),
-      menuItem("Single Factor Experiment",tabName = "sfe", icon = icon("align-left")),
-      menuItem("Two Factor Experiment",tabName = "tfe", icon = icon("align-left")),
+      menuItem("Single Factor Experiment",tabName = "sfe", icon = icon("align-left"),
+               menuItem("Maximum potential", 
+                        tabName = "mp_sfe",icon = icon("pencil")),
+               menuItem("Limited potential", 
+                        tabName = "lp_sfe",icon = icon("pencil"))
+      ),
+      menuItem("Two Factor Experiment",tabName = "tfe", icon = icon("align-left"),
+               menuItem("Maximum potential", 
+                        tabName = "mp_tfe",icon = icon("pencil")),
+               menuItem("Limited potential", 
+                        tabName = "lp_tfe",icon = icon("pencil"))
+      ),
       div(
         style = "display: flex; justify-content: center;",
         img(
@@ -38,8 +48,10 @@ ui <- dashboardPage(
       # draw_ebp tab content
       tabItem(tabName = "mp_sle",mpsle_ui()),
       tabItem(tabName = "lp_sle",h3("to add sle")),
-      tabItem(tabName = "sfe",h3("to add sfe")),
-      tabItem(tabName = "tfe",h3("to add tfe")),
+      tabItem(tabName = "mp_sfe",h3("to add sfe")),
+      tabItem(tabName = "lp_sfe",lpsfe_ui()),
+      tabItem(tabName = "mp_tfe",h3("to add tfe")),
+      tabItem(tabName = "lp_tfe",lptfe_ui()),
       
       
       # home tab content

@@ -1,4 +1,6 @@
 ################ server
 server <- function(input, output, session) {
-  mpsle_server(input, output)
+  mpsle_server(input, output, session)
+  lpsfe_server(input, output, session)
+  lptfe_server(input, output, session)
 }
